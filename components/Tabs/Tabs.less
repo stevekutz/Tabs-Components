@@ -2,15 +2,18 @@
   width: 100%;
   .tabs-items {
     width: 100%;
-    height: 300px;
+    //height: 300px;
+   // height: auto;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    flex-flow: wrap;
+    padding: 60px 0;
   }
   .tabs-item {
-    display: none; 
+   display: none;
+   // display: flex;
 
-    width: 75%;
+    width: 55%;
     .tabs-item-title {
       font-size: 24px;
       font-weight: bold;
@@ -23,24 +26,34 @@
 
   .tabs-links {
     display: flex;
-    background-color: @lambda-red;
+    flex-flow: wrap;
+   // background-color: @lambda-red;
+    background-color: gainsboro;
   }
 
   .tabs-link {
+    display: flex;
+    flex-flow: wrap;
     padding: 20px 25px;
     font-size: 24px;
+    line-height: 34px;
     background-color: @lambda-red;
     border-right: 1px solid white;
+    border-radius: 15px 15px 0 0;
     color: @white;
     cursor: pointer;
     &:hover {
-      background-color: @lambda-light-red;
+    //  background-color: @lambda-light-red;
+      background-color: @prettyblue;
+      font-size: 30px;
+      color: deeppink;
     }
   }
   .tabs-link-selected {
     z-index: 2;
     border-right: 1px solid @lambda-red;
-    background-color: @white;
+    //background-color: @white;
+    background-color: dodgerblue;
     color: black;
     &:hover {
       background-color: @white;
